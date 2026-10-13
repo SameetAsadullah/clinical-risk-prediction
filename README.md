@@ -2,6 +2,8 @@
 
 This project implements an end-to-end ML pipeline for binary clinical risk classification using PyTorch. The objective is to detect early signs of disease risk from patient diagnostics through scalable and efficient machine learning.
 
+[![Notebook checks](https://github.com/SameetAsadullah/clinical-risk-prediction/actions/workflows/quality.yml/badge.svg)](https://github.com/SameetAsadullah/clinical-risk-prediction/actions/workflows/quality.yml)
+
 > ⚡ Built with deployability and model evaluation at the forefront — includes optimizer benchmarking, imbalance correction, and visual diagnostics.
 
 ---
@@ -31,3 +33,18 @@ Medical datasets often suffer from class imbalance and noisy features. The goal 
 - `PyTorch`
 - `imbalanced-learn` for SMOTE
 - `Scikit-learn`, `Pandas`, `Matplotlib`, `Seaborn`
+
+## Repository layout
+
+- `notebooks/clinical-risk-prediction.ipynb` — preprocessing, training, and evaluation pipeline
+- `data/` — clinical datasets used by the notebook
+- `docs/reference-paper.pdf` — supporting reference material
+
+## Run the analysis
+
+Start Jupyter from the notebook directory so its relative data paths resolve consistently:
+
+```bash
+cd notebooks
+jupyter lab clinical-risk-prediction.ipynb
+```
