@@ -1,16 +1,16 @@
-# 🔬 Clinical Risk Prediction with PyTorch
+# Diabetes Risk
 
-This project implements an end-to-end ML pipeline for binary clinical risk classification using PyTorch. The objective is to detect early signs of disease risk from patient diagnostics through scalable and efficient machine learning.
+A PyTorch pipeline for binary diabetes classification from tabular diagnostic data. It compares SGD and Adam, uses SMOTE to address class imbalance, and evaluates the models with ROC-AUC, confusion matrices, and training curves.
 
-[![Notebook checks](https://github.com/SameetAsadullah/clinical-risk-prediction/actions/workflows/quality.yml/badge.svg)](https://github.com/SameetAsadullah/clinical-risk-prediction/actions/workflows/quality.yml)
+[![Notebook checks](https://github.com/SameetAsadullah/diabetes-risk/actions/workflows/quality.yml/badge.svg)](https://github.com/SameetAsadullah/diabetes-risk/actions/workflows/quality.yml)
 
-> ⚡ Built with deployability and model evaluation at the forefront — includes optimizer benchmarking, imbalance correction, and visual diagnostics.
+The notebook is a research analysis of the included datasets; it does not provide a validated clinical diagnostic service.
 
 ---
 
 ## 📌 Problem Statement
 
-Medical datasets often suffer from class imbalance and noisy features. The goal is to develop a robust binary classifier that generalizes well on clinical risk detection tasks, especially in skewed datasets, and provides interpretable evaluation metrics.
+The analysis examines binary diabetes classification using diagnostic features and compares training choices on imbalanced data. ROC-AUC and confusion matrices make the model comparison visible alongside accuracy.
 
 ---
 
@@ -36,7 +36,7 @@ Medical datasets often suffer from class imbalance and noisy features. The goal 
 
 ## Repository layout
 
-- `notebooks/clinical-risk-prediction.ipynb` — preprocessing, training, and evaluation pipeline
+- `notebooks/diabetes-risk.ipynb` — preprocessing, training, and evaluation pipeline
 - `data/` — clinical datasets used by the notebook
 - `docs/reference-paper.pdf` — supporting reference material
 
@@ -46,5 +46,5 @@ Start Jupyter from the notebook directory so its relative data paths resolve con
 
 ```bash
 cd notebooks
-jupyter lab clinical-risk-prediction.ipynb
+jupyter lab diabetes-risk.ipynb
 ```
