@@ -34,6 +34,10 @@ The analysis examines binary diabetes classification using diagnostic features a
 - `imbalanced-learn` for SMOTE
 - `Scikit-learn`, `Pandas`, `Matplotlib`, `Seaborn`
 
+## Evaluation flow
+
+The notebook splits the diagnostic records into training and test sets, applies SMOTE to the training set, and compares SGD and Adam during training. It reports a confusion matrix for test predictions and an ROC curve with AUC from predicted probabilities.
+
 ## Repository layout
 
 - `notebooks/diabetes-risk.ipynb` — preprocessing, training, and evaluation pipeline
